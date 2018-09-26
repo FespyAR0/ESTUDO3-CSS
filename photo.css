@@ -34,7 +34,7 @@ body{
 
 .js .menu-absolute{
     position: fixed;
-    width: 300px;
+    width: calc(16vw + 130px);
     background: whitesmoke;
     box-shadow: 3px 0px 10px rgba(0,0,0,.5);
     right: 0;
@@ -86,7 +86,7 @@ body{
     opacity: .3;
 }
 
-.menu-absolute .content{ height: calc(100vh - 20vh);}
+.menu-absolute .content{ height: calc(100vh - 25vh);}
 
 .menu-absolute .footer{ height: 320px;}
 
@@ -94,7 +94,7 @@ body{
 
 .menu-absolute .social{ margin: 40px auto;}
 
-.footer .btn-menu a span::before{ right: 20px;}
+.menu-absolute .btn-menu a span::before{ right: 25px;}
 
 .footer > span{
     display: block;
@@ -396,8 +396,49 @@ body{
     }
 }
 
-
 @media (max-width: 1440px){
+
+    .container{
+        max-width: 960px;
+    }
+
+
+/* INTRODUCTION  */
+
+.img-intro, .intro-text{margin-top: 120px; padding:0px 60px; }
+
+
+.img-intro img{max-width: 55%;}
+
+.intro-txt .titulo{
+    font-size: 36px;
+    margin-bottom: 36px;
+}
+
+.intro-txt p{
+    max-width: 370px;
+    color: #B3B3B3;
+    font-size: 18px;
+}
+
+    
+ /*  ANIMA BLOCK  */
+.anima{ height: 100px; width: 600px;}
+
+.anima:nth-child(2){width: 450px; top: 550px;}
+
+#anime-1 .block-anima :nth-child(1), #anime-2 .block-anima :nth-child(1){
+    font-size: 16px;
+}
+
+#anime-1 .block-anima:nth-child(1) ::before, #anime-2 .block-anima:nth-child(1) ::before{
+    font-size: 20px;
+}
+/* /ANIMA BLOCK */
+
+}
+
+@media (max-width: 1366px){
 
 .container{
         max-width: 960px;
